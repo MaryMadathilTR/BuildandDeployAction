@@ -1,0 +1,13 @@
+name: 'Build and Deploy'
+description: 'A custom GitHub Action to build and deploy a project'
+author: 'Your Name <your.email@example.com>'
+inputs:
+  build-command:
+    description: 'The command to build the project'
+    required: true
+  deploy-env:
+    description: 'The command to choose environment to deploy'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
