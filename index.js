@@ -7,7 +7,8 @@ async function run() {
         const name = core.getInput('build-command');
         const deployEnv = core.getInput('deploy-env');
         console.log(`Running build command: ${name} on ${deployEnv}`);
-}   catch (error) {
+    }   
+    catch (error) {
         core.setFailed(error.message);
     }
 }
